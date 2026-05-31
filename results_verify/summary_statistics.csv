@@ -1,0 +1,7 @@
+metric,mean
+pair_score,0.508791
+chain_score,0.813187
+weighted_linear_score,0.619114
+weighted_quadratic_score,0.707203
+hybrid_score,0.691429
+headline_H,0.508791

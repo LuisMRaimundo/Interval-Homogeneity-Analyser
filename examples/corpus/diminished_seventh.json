@@ -1,0 +1,30 @@
+{
+  "id": "diminished_seventh",
+  "description": "diminished seventh",
+  "tags": [
+    "dim",
+    "symmetric"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      -1.0,
+      4
+    ],
+    [
+      "G",
+      -1.0,
+      4
+    ],
+    [
+      "B",
+      -1.0,
+      4
+    ]
+  ]
+}

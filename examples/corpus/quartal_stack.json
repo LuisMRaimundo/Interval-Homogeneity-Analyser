@@ -1,0 +1,29 @@
+{
+  "id": "quartal_stack",
+  "description": "quartal stack",
+  "tags": [
+    "quartal"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "F",
+      0.0,
+      4
+    ],
+    [
+      "B",
+      -1.0,
+      4
+    ],
+    [
+      "E",
+      -1.0,
+      5
+    ]
+  ]
+}

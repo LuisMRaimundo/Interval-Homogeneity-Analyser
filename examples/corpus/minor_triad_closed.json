@@ -1,0 +1,25 @@
+{
+  "id": "minor_triad_closed",
+  "description": "minor triad closed",
+  "tags": [
+    "triad",
+    "tonal"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      -1.0,
+      4
+    ],
+    [
+      "G",
+      0.0,
+      4
+    ]
+  ]
+}

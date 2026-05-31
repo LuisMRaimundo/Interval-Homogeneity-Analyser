@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "edo": 12,
+  "bin_cents": 100,
+  "homogeneity_method": "dominance",
+  "hybrid_alpha": 0.6,
+  "entries": {
+    "major_triad": {
+      "xml_file": "validation/canonical/major_triad.xml",
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 0.5,
+        "weighted_linear_score": 0.4,
+        "weighted_quadratic_score": 0.4444,
+        "hybrid_score": 0.4333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "M3",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "M3",
+        "dominant_adjacent_share": 0.5,
+        "interval_vector": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interval_vector_str": "<0 0 1 1 1 0>",
+        "classification": "no dominant interval; mid evenness; irregular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {},
+        "note_count": 3
+      }
+    },
+    "minor_triad": {
+      "xml_file": "validation/canonical/minor_triad.xml",
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 0.5,
+        "weighted_linear_score": 0.4,
+        "weighted_quadratic_score": 0.4444,
+        "hybrid_score": 0.4333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "m3",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "m3",
+        "dominant_adjacent_share": 0.5,
+        "interval_vector": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interval_vector_str": "<0 0 1 1 1 0>",
+        "classification": "no dominant interval; mid evenness; irregular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {},
+        "note_count": 3
+      }
+    },
+    "chromatic_cluster": {
+      "xml_file": "validation/canonical/chromatic_cluster.xml",
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.5747,
+        "weighted_quadratic_score": 0.7694,
+        "hybrid_score": 0.7333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "m2",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "m2",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "interval_vector_str": "<5 4 3 2 1 0>",
+        "classification": "no dominant interval; high evenness; uniform stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {
+          "chain_score_min": 0.95,
+          "pair_score_max": 0.99,
+          "chain_gt_pair": true
+        },
+        "note_count": 6
+      }
+    },
+    "quartal_stack": {
+      "xml_file": "validation/canonical/quartal_stack.xml",
+      "expected": {
+        "pair_score": 0.5,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.6923,
+        "weighted_quadratic_score": 0.8308,
+        "hybrid_score": 0.8,
+        "H_headline_pairwise": 0.5,
+        "dominant_pairwise_interval": "P4",
+        "dominant_pairwise_share": 0.5,
+        "dominant_adjacent_interval": "P4",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          0,
+          2,
+          1,
+          0,
+          3,
+          0
+        ],
+        "interval_vector_str": "<0 2 1 0 3 0>",
+        "classification": "P4-dominant; mid evenness; uniform stacking",
+        "H_label": "moderately homogeneous",
+        "constraints": {
+          "chain_score_min": 0.95
+        },
+        "note_count": 4
+      }
+    },
+    "diminished_seventh": {
+      "xml_file": "validation/canonical/diminished_seventh.xml",
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 0.6667,
+        "weighted_linear_score": 0.4615,
+        "weighted_quadratic_score": 0.5538,
+        "hybrid_score": 0.5333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "m3",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "m3",
+        "dominant_adjacent_share": 0.6667,
+        "interval_vector": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "interval_vector_str": "<0 1 2 1 1 1>",
+        "classification": "no dominant interval; mid evenness; predominantly regular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {},
+        "note_count": 4
+      }
+    }
+  }
+}

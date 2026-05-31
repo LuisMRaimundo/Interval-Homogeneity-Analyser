@@ -1,0 +1,39 @@
+{
+  "id": "whole_tone_scale",
+  "description": "whole tone scale",
+  "tags": [
+    "whole_tone"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "D",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "F",
+      1.0,
+      4
+    ],
+    [
+      "G",
+      1.0,
+      4
+    ],
+    [
+      "B",
+      -1.0,
+      4
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+case_id,rater_id,texture_class_human,texture_class_tool_proxy,classification,headline_H,H_label,notes
+chromatic_cluster_semitone,rater_a,local_regular,homogeneous,no dominant interval; high evenness; uniform stacking,0.333333,moderately heterogeneous,high adjacent regularity
+dyad_perfect_fifth,rater_a,homogeneous,homogeneous,P5-dominant; low evenness; uniform stacking,1.0,homogeneous,unison interval class
+dyad_perfect_fifth,rater_b,heterogeneous,homogeneous,P5-dominant; low evenness; uniform stacking,1.0,homogeneous,disagreement for kappa exercise
+whole_tone_scale,rater_a,heterogeneous,homogeneous,no dominant interval; mid evenness; uniform stacking,0.333333,moderately heterogeneous,even pairwise distances

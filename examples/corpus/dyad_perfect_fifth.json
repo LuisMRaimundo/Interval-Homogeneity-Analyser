@@ -1,0 +1,19 @@
+{
+  "id": "dyad_perfect_fifth",
+  "description": "dyad perfect fifth",
+  "tags": [
+    "dyad"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "G",
+      0.0,
+      4
+    ]
+  ]
+}

@@ -1,0 +1,44 @@
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Batch / CI output and generated thesis tables
+results/
+results_ci/
+results_batch/
+docs/reports/**/*.csv
+docs/reports/**/*.json
+docs/reports/**/*.md
+!docs/reports/README.md
+docs/reports/_tmp/
+
+# Autonomous installers (portable Python + pip packages, per machine)
+installers/runtime/
+
+# Coverage (local)
+.coverage
+coverage.xml
+htmlcov/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# User documents / browser exports that should not live in the repo tree
+*.docx
+*.mhtml

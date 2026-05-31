@@ -1,0 +1,5 @@
+case_id,texture_class,rater_id,notes,expected_headline_mode
+dyad_perfect_fifth,homogeneous,rater_a,unison interval class,pairwise_intervallic_concentration
+dyad_perfect_fifth,heterogeneous,rater_b,disagreement for kappa exercise,pairwise_intervallic_concentration
+chromatic_cluster_semitone,local_regular,rater_a,high adjacent regularity,intervallic_adjacency_regularity
+whole_tone_scale,heterogeneous,rater_a,even pairwise distances,pairwise_intervallic_concentration

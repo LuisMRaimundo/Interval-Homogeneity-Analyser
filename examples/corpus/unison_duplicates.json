@@ -1,0 +1,24 @@
+{
+  "id": "unison_duplicates",
+  "description": "unison duplicates",
+  "tags": [
+    "duplicate"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ]
+  ]
+}

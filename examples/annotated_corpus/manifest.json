@@ -1,0 +1,41 @@
+{
+  "description": "Pilot annotated corpus: link file + human texture labels for batch comparison.",
+  "cases": [
+    {
+      "id": "major_triad_closed",
+      "file": "../corpus/major_triad_closed.json",
+      "human_labels": {
+        "texture_class": "heterogeneous",
+        "expected_headline_mode": "pairwise_intervallic_concentration",
+        "notes": "Sorted-register adjacent steps (M3, m3) differ; pairwise H is moderate on this voicing."
+      }
+    },
+    {
+      "id": "chromatic_cluster_semitone",
+      "file": "../corpus/chromatic_cluster_semitone.json",
+      "human_labels": {
+        "texture_class": "local_regular",
+        "expected_headline_mode": "intervallic_adjacency_regularity",
+        "notes": "Semitone chain; adjacent regularity should exceed pairwise."
+      }
+    },
+    {
+      "id": "sparse_random_like",
+      "file": "../corpus/sparse_random_like.json",
+      "human_labels": {
+        "texture_class": "heterogeneous",
+        "expected_headline_mode": "pairwise_intervallic_concentration",
+        "notes": "Wide, diverse interval content."
+      }
+    },
+    {
+      "id": "quartal_stack",
+      "file": "../corpus/quartal_stack.json",
+      "human_labels": {
+        "texture_class": "local_regular",
+        "expected_headline_mode": "intervallic_adjacency_regularity",
+        "notes": "Stacked fourths; high adjacent regularity."
+      }
+    }
+  ]
+}

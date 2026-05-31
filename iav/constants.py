@@ -1,0 +1,4 @@
+"""UI limits."""
+
+MAX_NOTES = 500
+FORCE_DEDUPE_THRESHOLD = 200

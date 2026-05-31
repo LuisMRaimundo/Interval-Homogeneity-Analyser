@@ -1,0 +1,89 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interval-aggregate-analyzer"
+version = "0.1.0"
+description = "Intervallic homogeneity for notated aggregates (Streamlit, MusicXML slices, H-over-time chart)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.32.0",
+    "defusedxml>=0.7.1",
+    "altair>=5.0.0",
+    "pandas>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.6.0",
+    "mypy>=1.8.0",
+    "music21>=9.1.0",
+]
+
+[project.scripts]
+iav-analyze = "iav.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["iav*"]
+
+[tool.setuptools.package-data]
+iav = ["data/*.json"]
+
+[tool.setuptools]
+py-modules = [
+    "app",
+    "analysis_core",
+    "interval_analysis",
+    "interval_analyzer_ui",
+    "pitch_model",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# So `pytest` works from an unpacked tree without `pip install -e .` (repo root on sys.path).
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+src = ["iav", "tests", "."]
+exclude = [
+    ".venv",
+    "build",
+    "dist",
+    ".eggs",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"analysis_core.py" = ["F403", "F405"]
+"interval_analysis.py" = ["F403", "F405"]
+"pitch_model.py" = ["F403", "F405"]
+"scripts/*.py" = ["E402"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+show_error_codes = true
+packages = ["iav"]
+ignore_missing_imports = true
+no_implicit_optional = true
+warn_return_any = false
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = ["streamlit.*", "altair.*", "pandas.*", "defusedxml.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["iav.pitch_model", "iav.ui_params", "iav.ui_result_formatting", "iav.ui_presets"]
+disallow_untyped_defs = true

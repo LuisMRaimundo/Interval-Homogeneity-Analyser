@@ -1,0 +1,25 @@
+{
+  "id": "augmented_triad",
+  "description": "augmented triad",
+  "tags": [
+    "aug",
+    "symmetric"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "G",
+      1.0,
+      4
+    ]
+  ]
+}

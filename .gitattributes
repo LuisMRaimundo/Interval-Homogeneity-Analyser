@@ -1,0 +1,15 @@
+# Shell scripts must use LF only: CRLF breaks `sh scripts/*.sh` on macOS/Linux (shebang / `set -e`).
+*.sh text eol=lf
+
+# Paths excluded from `git archive` (and GitHub “Download ZIP” source archives).
+# For curated handoffs, still prefer scripts/make_release_zip.* + verify_release_zip.*
+.venv export-ignore
+venv export-ignore
+env export-ignore
+.pytest_cache export-ignore
+.mypy_cache export-ignore
+.ruff_cache export-ignore
+htmlcov export-ignore
+build export-ignore
+dist export-ignore
+.eggs export-ignore

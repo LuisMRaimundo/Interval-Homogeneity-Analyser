@@ -1,0 +1,82 @@
+{
+  "n_annotations": 4,
+  "n_cases": 3,
+  "human_texture_counts": {
+    "local_regular": 1,
+    "homogeneous": 1,
+    "heterogeneous": 2
+  },
+  "tool_proxy_counts": {
+    "homogeneous": 4
+  },
+  "confusion_matrix_human_rows_tool_cols": {
+    "homogeneous": {
+      "homogeneous": 1,
+      "heterogeneous": 0,
+      "local_regular": 0
+    },
+    "heterogeneous": {
+      "homogeneous": 2,
+      "heterogeneous": 0,
+      "local_regular": 0
+    },
+    "local_regular": {
+      "homogeneous": 1,
+      "heterogeneous": 0,
+      "local_regular": 0
+    }
+  },
+  "cohen_kappa_global_two_raters": 0.0,
+  "cohen_kappa_per_pair": [
+    {
+      "case_id": "dyad_perfect_fifth",
+      "rater_a": "rater_a",
+      "rater_b": "rater_b",
+      "kappa": 0.0
+    }
+  ],
+  "spearman_human_ordinal_vs_headline_H": 0.23570226039551584,
+  "spearman_note": "ok",
+  "joined_rows": [
+    {
+      "case_id": "chromatic_cluster_semitone",
+      "rater_id": "rater_a",
+      "texture_class_human": "local_regular",
+      "texture_class_tool_proxy": "homogeneous",
+      "classification": "no dominant interval; high evenness; uniform stacking",
+      "headline_H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "notes": "high adjacent regularity"
+    },
+    {
+      "case_id": "dyad_perfect_fifth",
+      "rater_id": "rater_a",
+      "texture_class_human": "homogeneous",
+      "texture_class_tool_proxy": "homogeneous",
+      "classification": "P5-dominant; low evenness; uniform stacking",
+      "headline_H": 1.0,
+      "H_label": "homogeneous",
+      "notes": "unison interval class"
+    },
+    {
+      "case_id": "dyad_perfect_fifth",
+      "rater_id": "rater_b",
+      "texture_class_human": "heterogeneous",
+      "texture_class_tool_proxy": "homogeneous",
+      "classification": "P5-dominant; low evenness; uniform stacking",
+      "headline_H": 1.0,
+      "H_label": "homogeneous",
+      "notes": "disagreement for kappa exercise"
+    },
+    {
+      "case_id": "whole_tone_scale",
+      "rater_id": "rater_a",
+      "texture_class_human": "heterogeneous",
+      "texture_class_tool_proxy": "homogeneous",
+      "classification": "no dominant interval; mid evenness; uniform stacking",
+      "headline_H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "notes": "even pairwise distances"
+    }
+  ]
+}

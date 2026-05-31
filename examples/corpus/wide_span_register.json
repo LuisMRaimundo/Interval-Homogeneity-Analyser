@@ -1,0 +1,19 @@
+{
+  "id": "wide_span_register",
+  "description": "wide span register",
+  "tags": [
+    "wide_span"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      2
+    ],
+    [
+      "G",
+      0.0,
+      5
+    ]
+  ]
+}

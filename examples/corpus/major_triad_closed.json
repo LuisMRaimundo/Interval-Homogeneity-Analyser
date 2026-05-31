@@ -1,0 +1,25 @@
+{
+  "id": "major_triad_closed",
+  "description": "major triad closed",
+  "tags": [
+    "triad",
+    "tonal"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "G",
+      0.0,
+      4
+    ]
+  ]
+}

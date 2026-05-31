@@ -1,0 +1,35 @@
+{
+  "id": "dense_narrow_chromatic",
+  "description": "dense narrow chromatic",
+  "tags": [
+    "dense",
+    "chromatic"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "C",
+      1.0,
+      4
+    ],
+    [
+      "D",
+      0.0,
+      4
+    ],
+    [
+      "D",
+      1.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ]
+  ]
+}

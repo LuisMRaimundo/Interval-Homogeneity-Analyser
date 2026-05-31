@@ -1,0 +1,14 @@
+2026-05-20 12:10:28,450 INFO Analyzing augmented_triad.json
+2026-05-20 12:10:28,451 INFO Analyzing chromatic_cluster_semitone.json
+2026-05-20 12:10:28,452 INFO Analyzing dense_narrow_chromatic.json
+2026-05-20 12:10:28,453 INFO Analyzing diminished_seventh.json
+2026-05-20 12:10:28,453 INFO Analyzing dyad_perfect_fifth.json
+2026-05-20 12:10:28,454 INFO Analyzing major_triad_closed.json
+2026-05-20 12:10:28,455 INFO Analyzing minor_triad_closed.json
+2026-05-20 12:10:28,455 INFO Analyzing octatonic_half_whole.json
+2026-05-20 12:10:28,457 INFO Analyzing quartal_stack.json
+2026-05-20 12:10:28,457 INFO Analyzing sparse_random_like.json
+2026-05-20 12:10:28,458 INFO Analyzing unison_duplicates.json
+2026-05-20 12:10:28,459 INFO Analyzing whole_tone_scale.json
+2026-05-20 12:10:28,459 INFO Analyzing wide_span_register.json
+2026-05-20 12:10:28,462 INFO Wrote 13 rows to results_verify

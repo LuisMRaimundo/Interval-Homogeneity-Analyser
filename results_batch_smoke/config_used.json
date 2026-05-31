@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-20T11:10:43.193917+00:00",
+  "input_dir": "examples\\corpus",
+  "output_dir": "results_batch_smoke",
+  "edo": 12,
+  "headline_mode": "pairwise_intervallic_concentration",
+  "homogeneity_method": "dominance",
+  "hybrid_alpha_base": 0.6,
+  "auto_alpha": false,
+  "k_auto": 4,
+  "remove_duplicates": true,
+  "apply_sounding_transpose": false,
+  "dominance_threshold": 0.35,
+  "even_high": 0.8,
+  "even_low": 0.3,
+  "chain_threshold": 0.6
+}

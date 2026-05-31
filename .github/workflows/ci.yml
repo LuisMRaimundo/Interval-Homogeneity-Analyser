@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package
+        run: pip install -e ".[dev]"
+
+      - name: Ruff
+        run: |
+          ruff check iav tests analyze_corpus.py scripts
+          ruff format --check iav
+
+      - name: Mypy
+        run: mypy iav
+
+      - name: Pytest
+        run: pytest -q
+
+      - name: Canonical sonority verification
+        run: python analyze_corpus.py --verify-canonical -i examples/corpus -o results_ci
+
+      - name: Build canonical MusicXML expectations
+        run: python scripts/build_canonical_musicxml.py
+
+      - name: Batch example corpus
+        run: python analyze_corpus.py -i examples/corpus -o results_batch --headline pairwise_intervallic_concentration
+
+      - name: Sensitivity report
+        run: python scripts/sensitivity_report.py
+
+      - name: Annotated pilot study
+        run: python scripts/run_annotated_study.py
+
+      - name: Validation report (synthetic fixture)
+        run: |
+          python scripts/validation_report.py tests/fixtures/validation_annotations_minimal.csv \
+            --metrics results_batch/results.json \
+            --output results_batch/validation
+
+  music21:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e ".[dev]" music21
+      - run: pytest tests/test_music21_comparison.py -q

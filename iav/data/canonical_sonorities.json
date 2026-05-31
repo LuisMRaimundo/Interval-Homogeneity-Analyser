@@ -1,0 +1,713 @@
+{
+  "schema_version": 1,
+  "edo": 12,
+  "bin_cents": 100,
+  "homogeneity_method": "dominance",
+  "headline_mode": "pairwise_intervallic_concentration",
+  "hybrid_alpha": 0.6,
+  "sonorities": {
+    "dyad_perfect_fifth": {
+      "description": "dyad perfect fifth",
+      "tags": [
+        "dyad"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 1.0,
+        "chain_score": 1.0,
+        "weighted_linear_score": 1.0,
+        "weighted_quadratic_score": 1.0,
+        "hybrid_score": 1.0,
+        "H_headline_pairwise": 1.0,
+        "dominant_pairwise_interval": "P5",
+        "dominant_pairwise_share": 1.0,
+        "dominant_adjacent_interval": "P5",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "interval_vector_str": "<0 0 0 0 1 0>",
+        "classification": "P5-dominant; low evenness; uniform stacking",
+        "H_label": "homogeneous",
+        "constraints": {
+          "pair_score_min": 0.99,
+          "chain_score_min": 0.99
+        }
+      }
+    },
+    "unison_duplicates": {
+      "description": "unison duplicates",
+      "tags": [
+        "duplicate"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.6667,
+        "chain_score": 0.5,
+        "weighted_linear_score": 0.6,
+        "weighted_quadratic_score": 0.5556,
+        "hybrid_score": 0.5667,
+        "H_headline_pairwise": 0.6667,
+        "dominant_pairwise_interval": "M3",
+        "dominant_pairwise_share": 0.6667,
+        "dominant_adjacent_interval": "P1",
+        "dominant_adjacent_share": 0.5,
+        "interval_vector": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "interval_vector_str": "<0 0 0 1 0 0>",
+        "classification": "M3-dominant; mid evenness; irregular stacking",
+        "H_label": "moderately homogeneous",
+        "constraints": {}
+      }
+    },
+    "chromatic_cluster_semitone": {
+      "description": "chromatic cluster semitone",
+      "tags": [
+        "chromatic",
+        "adjacent_max"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          1.0,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          1.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          0.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.5747,
+        "weighted_quadratic_score": 0.7694,
+        "hybrid_score": 0.7333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "m2",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "m2",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "interval_vector_str": "<5 4 3 2 1 0>",
+        "classification": "no dominant interval; high evenness; uniform stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {
+          "chain_score_min": 0.95,
+          "pair_score_max": 0.99,
+          "chain_gt_pair": true
+        }
+      }
+    },
+    "whole_tone_scale": {
+      "description": "whole tone scale",
+      "tags": [
+        "whole_tone"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          1.0,
+          4
+        ],
+        [
+          "G",
+          1.0,
+          4
+        ],
+        [
+          "B",
+          -1.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.5747,
+        "weighted_quadratic_score": 0.7694,
+        "hybrid_score": 0.7333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "M2",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "M2",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          0,
+          6,
+          0,
+          6,
+          0,
+          3
+        ],
+        "interval_vector_str": "<0 6 0 6 0 3>",
+        "classification": "no dominant interval; mid evenness; uniform stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {
+          "chain_score_min": 0.95
+        }
+      }
+    },
+    "quartal_stack": {
+      "description": "quartal stack",
+      "tags": [
+        "quartal"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          0.0,
+          4
+        ],
+        [
+          "B",
+          -1.0,
+          4
+        ],
+        [
+          "E",
+          -1.0,
+          5
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.5,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.6923,
+        "weighted_quadratic_score": 0.8308,
+        "hybrid_score": 0.8,
+        "H_headline_pairwise": 0.5,
+        "dominant_pairwise_interval": "P4",
+        "dominant_pairwise_share": 0.5,
+        "dominant_adjacent_interval": "P4",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          0,
+          2,
+          1,
+          0,
+          3,
+          0
+        ],
+        "interval_vector_str": "<0 2 1 0 3 0>",
+        "classification": "P4-dominant; mid evenness; uniform stacking",
+        "H_label": "moderately homogeneous",
+        "constraints": {
+          "chain_score_min": 0.95
+        }
+      }
+    },
+    "major_triad_closed": {
+      "description": "major triad closed",
+      "tags": [
+        "triad",
+        "tonal"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 0.5,
+        "weighted_linear_score": 0.4,
+        "weighted_quadratic_score": 0.4444,
+        "hybrid_score": 0.4333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "M3",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "M3",
+        "dominant_adjacent_share": 0.5,
+        "interval_vector": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interval_vector_str": "<0 0 1 1 1 0>",
+        "classification": "no dominant interval; mid evenness; irregular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {}
+      }
+    },
+    "minor_triad_closed": {
+      "description": "minor triad closed",
+      "tags": [
+        "triad",
+        "tonal"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          -1.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 0.5,
+        "weighted_linear_score": 0.4,
+        "weighted_quadratic_score": 0.4444,
+        "hybrid_score": 0.4333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "m3",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "m3",
+        "dominant_adjacent_share": 0.5,
+        "interval_vector": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "interval_vector_str": "<0 0 1 1 1 0>",
+        "classification": "no dominant interval; mid evenness; irregular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {}
+      }
+    },
+    "diminished_seventh": {
+      "description": "diminished seventh",
+      "tags": [
+        "dim",
+        "symmetric"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          -1.0,
+          4
+        ],
+        [
+          "G",
+          -1.0,
+          4
+        ],
+        [
+          "B",
+          -1.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.3333,
+        "chain_score": 0.6667,
+        "weighted_linear_score": 0.4615,
+        "weighted_quadratic_score": 0.5538,
+        "hybrid_score": 0.5333,
+        "H_headline_pairwise": 0.3333,
+        "dominant_pairwise_interval": "m3",
+        "dominant_pairwise_share": 0.3333,
+        "dominant_adjacent_interval": "m3",
+        "dominant_adjacent_share": 0.6667,
+        "interval_vector": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "interval_vector_str": "<0 1 2 1 1 1>",
+        "classification": "no dominant interval; mid evenness; predominantly regular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {}
+      }
+    },
+    "augmented_triad": {
+      "description": "augmented triad",
+      "tags": [
+        "aug",
+        "symmetric"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          1.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.6667,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.8,
+        "weighted_quadratic_score": 0.8889,
+        "hybrid_score": 0.8667,
+        "H_headline_pairwise": 0.6667,
+        "dominant_pairwise_interval": "M3",
+        "dominant_pairwise_share": 0.6667,
+        "dominant_adjacent_interval": "M3",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        "interval_vector_str": "<0 0 0 3 0 0>",
+        "classification": "M3-dominant; low evenness; uniform stacking",
+        "H_label": "moderately homogeneous",
+        "constraints": {}
+      }
+    },
+    "octatonic_half_whole": {
+      "description": "octatonic half whole",
+      "tags": [
+        "octatonic"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          1.0,
+          4
+        ],
+        [
+          "D",
+          1.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          1.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ],
+        [
+          "A",
+          0.0,
+          4
+        ],
+        [
+          "B",
+          -1.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.2143,
+        "chain_score": 0.5714,
+        "weighted_linear_score": 0.2911,
+        "weighted_quadratic_score": 0.421,
+        "hybrid_score": 0.4286,
+        "H_headline_pairwise": 0.2143,
+        "dominant_pairwise_interval": "m3",
+        "dominant_pairwise_share": 0.2143,
+        "dominant_adjacent_interval": "m2",
+        "dominant_adjacent_share": 0.5714,
+        "interval_vector": [
+          4,
+          4,
+          8,
+          4,
+          4,
+          4
+        ],
+        "interval_vector_str": "<4 4 8 4 4 4>",
+        "classification": "no dominant interval; high evenness; irregular stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {}
+      }
+    },
+    "sparse_random_like": {
+      "description": "sparse random like",
+      "tags": [
+        "heterogeneous"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          1.0,
+          5
+        ],
+        [
+          "B",
+          -1.0,
+          3
+        ],
+        [
+          "E",
+          -1.0,
+          6
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.1667,
+        "chain_score": 0.3333,
+        "weighted_linear_score": 0.2308,
+        "weighted_quadratic_score": 0.2769,
+        "hybrid_score": 0.2667,
+        "H_headline_pairwise": 0.1667,
+        "dominant_pairwise_interval": "TT11",
+        "dominant_pairwise_share": 0.1667,
+        "dominant_adjacent_interval": "M2",
+        "dominant_adjacent_share": 0.3333,
+        "interval_vector": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "interval_vector_str": "<0 1 2 1 1 1>",
+        "classification": "no dominant interval; mid evenness; irregular stacking",
+        "H_label": "heterogeneous",
+        "constraints": {
+          "pair_score_max": 0.5
+        }
+      }
+    },
+    "wide_span_register": {
+      "description": "wide span register",
+      "tags": [
+        "wide_span"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          2
+        ],
+        [
+          "G",
+          0.0,
+          5
+        ]
+      ],
+      "expected": {
+        "pair_score": 1.0,
+        "chain_score": 1.0,
+        "weighted_linear_score": 1.0,
+        "weighted_quadratic_score": 1.0,
+        "hybrid_score": 1.0,
+        "H_headline_pairwise": 1.0,
+        "dominant_pairwise_interval": "P26",
+        "dominant_pairwise_share": 1.0,
+        "dominant_adjacent_interval": "P26",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "interval_vector_str": "<0 0 0 0 1 0>",
+        "classification": "P26-dominant; low evenness; uniform stacking",
+        "H_label": "homogeneous",
+        "constraints": {}
+      }
+    },
+    "dense_narrow_chromatic": {
+      "description": "dense narrow chromatic",
+      "tags": [
+        "dense",
+        "chromatic"
+      ],
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          1.0,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          1.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ]
+      ],
+      "expected": {
+        "pair_score": 0.4,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.6234,
+        "weighted_quadratic_score": 0.7945,
+        "hybrid_score": 0.76,
+        "H_headline_pairwise": 0.4,
+        "dominant_pairwise_interval": "m2",
+        "dominant_pairwise_share": 0.4,
+        "dominant_adjacent_interval": "m2",
+        "dominant_adjacent_share": 1.0,
+        "interval_vector": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          0
+        ],
+        "interval_vector_str": "<4 3 2 1 0 0>",
+        "classification": "m2-dominant; mid evenness; uniform stacking",
+        "H_label": "moderately heterogeneous",
+        "constraints": {
+          "chain_score_min": 0.95,
+          "chain_gt_pair": true
+        }
+      }
+    }
+  }
+}

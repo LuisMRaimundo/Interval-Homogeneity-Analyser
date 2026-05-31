@@ -1,0 +1,40 @@
+{
+  "id": "chromatic_cluster_semitone",
+  "description": "chromatic cluster semitone",
+  "tags": [
+    "chromatic",
+    "adjacent_max"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "C",
+      1.0,
+      4
+    ],
+    [
+      "D",
+      0.0,
+      4
+    ],
+    [
+      "D",
+      1.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "F",
+      0.0,
+      4
+    ]
+  ]
+}

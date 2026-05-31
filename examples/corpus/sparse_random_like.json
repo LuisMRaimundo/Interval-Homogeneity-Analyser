@@ -1,0 +1,29 @@
+{
+  "id": "sparse_random_like",
+  "description": "sparse random like",
+  "tags": [
+    "heterogeneous"
+  ],
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "F",
+      1.0,
+      5
+    ],
+    [
+      "B",
+      -1.0,
+      3
+    ],
+    [
+      "E",
+      -1.0,
+      6
+    ]
+  ]
+}

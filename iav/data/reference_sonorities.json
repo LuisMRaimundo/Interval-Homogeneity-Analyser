@@ -1,0 +1,37 @@
+{
+  "major_triad_closed": {
+    "label": "Major triad (closed position)",
+    "notes": [["C", 0.0, 4], ["E", 0.0, 4], ["G", 0.0, 4]],
+    "edo": 12
+  },
+  "minor_triad_closed": {
+    "label": "Minor triad (closed position)",
+    "notes": [["C", 0.0, 4], ["Eb", 0.0, 4], ["G", 0.0, 4]],
+    "edo": 12
+  },
+  "dominant_seventh": {
+    "label": "Dominant seventh (root position)",
+    "notes": [["C", 0.0, 4], ["E", 0.0, 4], ["G", 0.0, 4], ["Bb", 0.0, 4]],
+    "edo": 12
+  },
+  "whole_tone_tetrad": {
+    "label": "Whole-tone tetrachord (C D E F#)",
+    "notes": [["C", 0.0, 4], ["D", 0.0, 4], ["E", 0.0, 4], ["F#", 0.0, 4]],
+    "edo": 12
+  },
+  "chromatic_cluster_5": {
+    "label": "Chromatic cluster (five semitones)",
+    "notes": [["C", 0.0, 4], ["C", 1.0, 4], ["D", 0.0, 4], ["D", 1.0, 4], ["E", 0.0, 4]],
+    "edo": 12
+  },
+  "open_fifths": {
+    "label": "Open fifths (C G D, spread register)",
+    "notes": [["C", 0.0, 3], ["G", 0.0, 3], ["D", 0.0, 4]],
+    "edo": 12
+  },
+  "quartal_stack": {
+    "label": "Quartal stack (perfect fourths)",
+    "notes": [["C", 0.0, 4], ["F", 0.0, 4], ["Bb", 0.0, 4], ["Eb", 0.0, 5]],
+    "edo": 12
+  }
+}
