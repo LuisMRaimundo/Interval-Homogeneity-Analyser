@@ -2,6 +2,8 @@
 
 This page lists **exact control labels** as shown in the Streamlit app. Use the same homogeneity block for every example so results stay comparable.
 
+**What H and related scores mean (not formulas):** [docs/METRIC_SEMANTICS.md](docs/METRIC_SEMANTICS.md).
+
 ## In the app
 
 Open **Analysis presets** at the top of the main page:
