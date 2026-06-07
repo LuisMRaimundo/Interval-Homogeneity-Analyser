@@ -22,7 +22,9 @@ jobs:
 
       - run:
           name: Install package with development dependencies
-          command: python -m pip install -e ".[dev]"
+          command: |
+            python -m pip install -e ".[dev]"
+            python -m pip install pytest-cov
 
       - run:
           name: Run tests
