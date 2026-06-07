@@ -1,0 +1,1442 @@
+{
+  "generated_at": "2026-06-07T21:12:34Z",
+  "suite": "interval_homogeneity_regression",
+  "phase": 1,
+  "fixture_count": 20,
+  "fixtures": [
+    {
+      "fixture": "unison_dyad",
+      "description": "Degenerate dyad: duplicate C4. Two vertical events, one unique pitch height.",
+      "tags": [
+        "dyad",
+        "degenerate",
+        "duplicate"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 2,
+      "vertical_note_count": 2,
+      "vertical_unique_pitch_count": 1,
+      "pair_score": 1.0,
+      "chain_score": 1.0,
+      "weighted_linear_score": 1.0,
+      "weighted_quadratic_score": 1.0,
+      "hybrid_score": 1.0,
+      "H": 1.0,
+      "H_label": "homogeneous",
+      "evenness_score": 0.0,
+      "type_score": 1.0,
+      "classification": "P1-dominant; low evenness; uniform stacking",
+      "distance_counts": {
+        "0": 1
+      },
+      "adj_counts": {
+        "0": 1
+      },
+      "dominant_pairwise_interval": "P1",
+      "dominant_adjacent_interval": "P1",
+      "interpretation_note": "Single-interval or maximally concentrated dyad/degenerate case (not consonance validation)."
+    },
+    {
+      "fixture": "single_interval_dyad_perfect_fifth",
+      "description": "Dyad C4–G4: one pairwise interval type (P5 on 12-TET grid).",
+      "tags": [
+        "dyad",
+        "single_interval"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 2,
+      "vertical_note_count": 2,
+      "vertical_unique_pitch_count": 2,
+      "pair_score": 1.0,
+      "chain_score": 1.0,
+      "weighted_linear_score": 1.0,
+      "weighted_quadratic_score": 1.0,
+      "hybrid_score": 1.0,
+      "H": 1.0,
+      "H_label": "homogeneous",
+      "evenness_score": 0.0,
+      "type_score": 1.0,
+      "classification": "P5-dominant; low evenness; uniform stacking",
+      "distance_counts": {
+        "7": 1
+      },
+      "adj_counts": {
+        "7": 1
+      },
+      "dominant_pairwise_interval": "P5",
+      "dominant_adjacent_interval": "P5",
+      "interpretation_note": "Single-interval or maximally concentrated dyad/degenerate case (not consonance validation)."
+    },
+    {
+      "fixture": "minor_second_dyad",
+      "description": "Dyad C4–C#4: single m2 interval; high concentration does not imply consonance.",
+      "tags": [
+        "dyad",
+        "single_interval",
+        "dissonant_spelling"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          1.0,
+          4
+        ]
+      ],
+      "cardinality": 2,
+      "vertical_note_count": 2,
+      "vertical_unique_pitch_count": 2,
+      "pair_score": 1.0,
+      "chain_score": 1.0,
+      "weighted_linear_score": 1.0,
+      "weighted_quadratic_score": 1.0,
+      "hybrid_score": 1.0,
+      "H": 1.0,
+      "H_label": "homogeneous",
+      "evenness_score": 0.0,
+      "type_score": 1.0,
+      "classification": "m2-dominant; low evenness; uniform stacking",
+      "distance_counts": {
+        "1": 1
+      },
+      "adj_counts": {
+        "1": 1
+      },
+      "dominant_pairwise_interval": "m2",
+      "dominant_adjacent_interval": "m2",
+      "interpretation_note": "Single-interval or maximally concentrated dyad/degenerate case (not consonance validation)."
+    },
+    {
+      "fixture": "chromatic_cluster_four",
+      "description": "Four consecutive semitones C4–D#4: regular adjacent spacing, diverse pairwise set.",
+      "tags": [
+        "cluster",
+        "adjacent_vs_pairwise"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          1.0,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          1.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.729574,
+      "type_score": 0.6,
+      "classification": "m2-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1
+      },
+      "adj_counts": {
+        "1": 3
+      },
+      "dominant_pairwise_interval": "m2",
+      "dominant_adjacent_interval": "m2",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "whole_tone_segment_four",
+      "description": "Whole-tone segment C4–F#4: uniform adjacent M2, broader pairwise distances.",
+      "tags": [
+        "whole_tone",
+        "adjacent_vs_pairwise"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          1.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.519759,
+      "type_score": 0.6,
+      "classification": "M2-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "2": 3,
+        "4": 2,
+        "6": 1
+      },
+      "adj_counts": {
+        "2": 3
+      },
+      "dominant_pairwise_interval": "M2",
+      "dominant_adjacent_interval": "M2",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "stacked_fourths",
+      "description": "Quartal stack C4–Eb5: repeated P4 adjacent intervals.",
+      "tags": [
+        "quartal",
+        "regular_adjacent"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          0.0,
+          4
+        ],
+        [
+          "B",
+          -1.0,
+          4
+        ],
+        [
+          "E",
+          -1.0,
+          5
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.364787,
+      "type_score": 0.6,
+      "classification": "P4-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "5": 3,
+        "10": 2,
+        "15": 1
+      },
+      "adj_counts": {
+        "5": 3
+      },
+      "dominant_pairwise_interval": "P4",
+      "dominant_adjacent_interval": "P4",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "stacked_fifths",
+      "description": "Fifths stack C3–A4: repeated P5 adjacent intervals.",
+      "tags": [
+        "quintal",
+        "regular_adjacent"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          3
+        ],
+        [
+          "G",
+          0.0,
+          3
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "A",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.327205,
+      "type_score": 0.6,
+      "classification": "P5-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "7": 3,
+        "14": 2,
+        "21": 1
+      },
+      "adj_counts": {
+        "7": 3
+      },
+      "dominant_pairwise_interval": "P5",
+      "dominant_adjacent_interval": "P5",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "major_triad_close",
+      "description": "Closed major triad C4–E4–G4: three distinct pairwise interval types.",
+      "tags": [
+        "triad",
+        "irregular_pairwise"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 3,
+      "vertical_note_count": 3,
+      "vertical_unique_pitch_count": 3,
+      "pair_score": 0.333333,
+      "chain_score": 0.5,
+      "weighted_linear_score": 0.4,
+      "weighted_quadratic_score": 0.444444,
+      "hybrid_score": 0.433333,
+      "H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "evenness_score": 0.528321,
+      "type_score": 0.0,
+      "classification": "no dominant interval; mid evenness; irregular stacking",
+      "distance_counts": {
+        "4": 1,
+        "7": 1,
+        "3": 1
+      },
+      "adj_counts": {
+        "4": 1,
+        "3": 1
+      },
+      "dominant_pairwise_interval": "M3",
+      "dominant_adjacent_interval": "M3",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "augmented_triad_symmetric",
+      "description": "Augmented triad C4–E4–G#4: equal major-third division in 12-TET.",
+      "tags": [
+        "triad",
+        "symmetric"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          1.0,
+          4
+        ]
+      ],
+      "cardinality": 3,
+      "vertical_note_count": 3,
+      "vertical_unique_pitch_count": 3,
+      "pair_score": 0.666667,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.8,
+      "weighted_quadratic_score": 0.888889,
+      "hybrid_score": 0.866667,
+      "H": 0.666667,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.28969,
+      "type_score": 0.5,
+      "classification": "M3-dominant; low evenness; uniform stacking",
+      "distance_counts": {
+        "4": 2,
+        "8": 1
+      },
+      "adj_counts": {
+        "4": 2
+      },
+      "dominant_pairwise_interval": "M3",
+      "dominant_adjacent_interval": "M3",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "diminished_seventh_symmetric",
+      "description": "Diminished seventh C4–A4: symmetric minor-third tiling.",
+      "tags": [
+        "seventh",
+        "symmetric"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          -1.0,
+          4
+        ],
+        [
+          "G",
+          -1.0,
+          4
+        ],
+        [
+          "A",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.439247,
+      "type_score": 0.6,
+      "classification": "m3-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "3": 3,
+        "6": 2,
+        "9": 1
+      },
+      "adj_counts": {
+        "3": 3
+      },
+      "dominant_pairwise_interval": "m3",
+      "dominant_adjacent_interval": "m3",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "dominant_seventh_irregular",
+      "description": "Dominant seventh C4–Bb4: same cardinality as dim7, less regular pairwise profile.",
+      "tags": [
+        "seventh",
+        "irregular"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ],
+        [
+          "B",
+          -1.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.333333,
+      "chain_score": 0.666667,
+      "weighted_linear_score": 0.461538,
+      "weighted_quadratic_score": 0.553846,
+      "hybrid_score": 0.533333,
+      "H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "evenness_score": 0.650867,
+      "type_score": 0.2,
+      "classification": "no dominant interval; mid evenness; predominantly regular stacking",
+      "distance_counts": {
+        "4": 1,
+        "7": 1,
+        "10": 1,
+        "3": 2,
+        "6": 1
+      },
+      "adj_counts": {
+        "4": 1,
+        "3": 2
+      },
+      "dominant_pairwise_interval": "m3",
+      "dominant_adjacent_interval": "m3",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "same_cardinality_different_distribution_A",
+      "description": "Four-note diatonic cluster C4–F4: compact scalar / adjacent regularity.",
+      "tags": [
+        "cardinality_control",
+        "compact"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "F",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.333333,
+      "chain_score": 0.666667,
+      "weighted_linear_score": 0.461538,
+      "weighted_quadratic_score": 0.553846,
+      "hybrid_score": 0.533333,
+      "H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "evenness_score": 0.871049,
+      "type_score": 0.2,
+      "classification": "no dominant interval; high evenness; predominantly regular stacking",
+      "distance_counts": {
+        "2": 2,
+        "4": 1,
+        "5": 1,
+        "3": 1,
+        "1": 1
+      },
+      "adj_counts": {
+        "2": 2,
+        "1": 1
+      },
+      "dominant_pairwise_interval": "M2",
+      "dominant_adjacent_interval": "M2",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "same_cardinality_different_distribution_B",
+      "description": "Four-note wide/symmetric C4–C5: same cardinality, different interval distribution.",
+      "tags": [
+        "cardinality_control",
+        "wide"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          1.0,
+          4
+        ],
+        [
+          "C",
+          0.0,
+          5
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.394317,
+      "type_score": 0.6,
+      "classification": "M3-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "4": 3,
+        "8": 2,
+        "12": 1
+      },
+      "adj_counts": {
+        "4": 3
+      },
+      "dominant_pairwise_interval": "M3",
+      "dominant_adjacent_interval": "M3",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "octave_duplication_case",
+      "description": "C4 C5 G4: octave duplication; model uses distinct pitch heights (no pc collapse).",
+      "tags": [
+        "octave",
+        "register"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          0.0,
+          5
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 3,
+      "vertical_note_count": 3,
+      "vertical_unique_pitch_count": 3,
+      "pair_score": 0.333333,
+      "chain_score": 0.5,
+      "weighted_linear_score": 0.4,
+      "weighted_quadratic_score": 0.444444,
+      "hybrid_score": 0.433333,
+      "H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "evenness_score": 0.428317,
+      "type_score": 0.0,
+      "classification": "no dominant interval; mid evenness; irregular stacking",
+      "distance_counts": {
+        "12": 1,
+        "7": 1,
+        "5": 1
+      },
+      "adj_counts": {
+        "7": 1,
+        "5": 1
+      },
+      "dominant_pairwise_interval": "P8",
+      "dominant_adjacent_interval": "P5",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "transposed_same_structure",
+      "description": "chromatic_cluster_four transposed up major second (D4–F#4).",
+      "tags": [
+        "metamorphic",
+        "transposition"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          1.0,
+          4
+        ],
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "E",
+          1.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.5,
+      "chain_score": 1.0,
+      "weighted_linear_score": 0.692308,
+      "weighted_quadratic_score": 0.830769,
+      "hybrid_score": 0.8,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.729574,
+      "type_score": 0.6,
+      "classification": "m2-dominant; mid evenness; uniform stacking",
+      "distance_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1
+      },
+      "adj_counts": {
+        "1": 3
+      },
+      "dominant_pairwise_interval": "m2",
+      "dominant_adjacent_interval": "m2",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics.",
+      "reference_fixture": "chromatic_cluster_four",
+      "reference_metrics": {
+        "cardinality": 4,
+        "vertical_note_count": 4,
+        "vertical_unique_pitch_count": 4,
+        "pair_score": 0.5,
+        "chain_score": 1.0,
+        "weighted_linear_score": 0.692308,
+        "weighted_quadratic_score": 0.830769,
+        "hybrid_score": 0.8,
+        "H": 0.5,
+        "H_label": "moderately homogeneous",
+        "evenness_score": 0.729574,
+        "type_score": 0.6,
+        "classification": "m2-dominant; mid evenness; uniform stacking",
+        "distance_counts": {
+          "1": 3,
+          "2": 2,
+          "3": 1
+        },
+        "adj_counts": {
+          "1": 3
+        },
+        "dominant_pairwise_interval": "m2",
+        "dominant_adjacent_interval": "m2",
+        "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+      }
+    },
+    {
+      "fixture": "inversion_same_interval_multiset",
+      "description": "Inversion of major_triad_close around E4: E4 G#4 C#4.",
+      "tags": [
+        "metamorphic",
+        "inversion"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "E",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          1.0,
+          4
+        ],
+        [
+          "C",
+          1.0,
+          4
+        ]
+      ],
+      "cardinality": 3,
+      "vertical_note_count": 3,
+      "vertical_unique_pitch_count": 3,
+      "pair_score": 0.333333,
+      "chain_score": 0.5,
+      "weighted_linear_score": 0.4,
+      "weighted_quadratic_score": 0.444444,
+      "hybrid_score": 0.433333,
+      "H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "evenness_score": 0.528321,
+      "type_score": 0.0,
+      "classification": "no dominant interval; mid evenness; irregular stacking",
+      "distance_counts": {
+        "4": 1,
+        "3": 1,
+        "7": 1
+      },
+      "adj_counts": {
+        "3": 1,
+        "4": 1
+      },
+      "dominant_pairwise_interval": "M3",
+      "dominant_adjacent_interval": "m3",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics.",
+      "reference_fixture": "major_triad_close",
+      "reference_metrics": {
+        "cardinality": 3,
+        "vertical_note_count": 3,
+        "vertical_unique_pitch_count": 3,
+        "pair_score": 0.333333,
+        "chain_score": 0.5,
+        "weighted_linear_score": 0.4,
+        "weighted_quadratic_score": 0.444444,
+        "hybrid_score": 0.433333,
+        "H": 0.333333,
+        "H_label": "moderately heterogeneous",
+        "evenness_score": 0.528321,
+        "type_score": 0.0,
+        "classification": "no dominant interval; mid evenness; irregular stacking",
+        "distance_counts": {
+          "4": 1,
+          "7": 1,
+          "3": 1
+        },
+        "adj_counts": {
+          "4": 1,
+          "3": 1
+        },
+        "dominant_pairwise_interval": "M3",
+        "dominant_adjacent_interval": "M3",
+        "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+      }
+    },
+    {
+      "fixture": "EDO_24_microtonal_regular",
+      "description": "Quarter-tone chromatic segment on 24-EDO grid (bin_cents=50).",
+      "tags": [
+        "microtonal",
+        "edo24"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 50,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          0.5,
+          4
+        ],
+        [
+          "D",
+          0.0,
+          4
+        ],
+        [
+          "D",
+          0.5,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 4,
+      "pair_score": 0.333333,
+      "chain_score": 0.666667,
+      "weighted_linear_score": 0.461538,
+      "weighted_quadratic_score": 0.553846,
+      "hybrid_score": 0.533333,
+      "H": 0.333333,
+      "H_label": "moderately heterogeneous",
+      "evenness_score": 0.742098,
+      "type_score": 0.4,
+      "classification": "no dominant interval; mid evenness; predominantly regular stacking",
+      "distance_counts": {
+        "1": 2,
+        "4": 2,
+        "5": 1,
+        "3": 1
+      },
+      "adj_counts": {
+        "1": 2,
+        "3": 1
+      },
+      "dominant_pairwise_interval": "50c",
+      "dominant_adjacent_interval": "50c",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics."
+    },
+    {
+      "fixture": "EDO_bin_change_sensitivity",
+      "description": "Same four semitones analysed at bin_cents=100 vs 50 (modelling choice).",
+      "tags": [
+        "edo",
+        "binning"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "bin_variants": [
+        {
+          "cardinality": 4,
+          "vertical_note_count": 4,
+          "vertical_unique_pitch_count": 4,
+          "pair_score": 0.5,
+          "chain_score": 1.0,
+          "weighted_linear_score": 0.692308,
+          "weighted_quadratic_score": 0.830769,
+          "hybrid_score": 0.8,
+          "H": 0.5,
+          "H_label": "moderately homogeneous",
+          "evenness_score": 0.729574,
+          "type_score": 0.6,
+          "classification": "m2-dominant; mid evenness; uniform stacking",
+          "distance_counts": {
+            "1": 3,
+            "2": 2,
+            "3": 1
+          },
+          "adj_counts": {
+            "1": 3
+          },
+          "dominant_pairwise_interval": "m2",
+          "dominant_adjacent_interval": "m2",
+          "interpretation_note": "Observed at bin_cents=100; binning is a modelling choice, not tuning.",
+          "bin_cents": 100
+        },
+        {
+          "cardinality": 4,
+          "vertical_note_count": 4,
+          "vertical_unique_pitch_count": 4,
+          "pair_score": 0.5,
+          "chain_score": 1.0,
+          "weighted_linear_score": 0.692308,
+          "weighted_quadratic_score": 0.830769,
+          "hybrid_score": 0.8,
+          "H": 0.5,
+          "H_label": "moderately homogeneous",
+          "evenness_score": 0.519759,
+          "type_score": 0.6,
+          "classification": "100c-dominant; mid evenness; uniform stacking",
+          "distance_counts": {
+            "2": 3,
+            "4": 2,
+            "6": 1
+          },
+          "adj_counts": {
+            "2": 3
+          },
+          "dominant_pairwise_interval": "100c",
+          "dominant_adjacent_interval": "100c",
+          "interpretation_note": "Observed at bin_cents=50; binning is a modelling choice, not tuning.",
+          "bin_cents": 50
+        }
+      ],
+      "labels_or_metrics_differ": true
+    },
+    {
+      "fixture": "repeated_pitch_density_not_homogeneity",
+      "description": "C4 C4 C4 G4: duplicate pitches preserved in manual aggregate path.",
+      "tags": [
+        "duplicate",
+        "density"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "notes": [
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "C",
+          0.0,
+          4
+        ],
+        [
+          "G",
+          0.0,
+          4
+        ]
+      ],
+      "cardinality": 4,
+      "vertical_note_count": 4,
+      "vertical_unique_pitch_count": 2,
+      "pair_score": 0.5,
+      "chain_score": 0.666667,
+      "weighted_linear_score": 0.576923,
+      "weighted_quadratic_score": 0.623077,
+      "hybrid_score": 0.6,
+      "H": 0.5,
+      "H_label": "moderately homogeneous",
+      "evenness_score": 0.333333,
+      "type_score": 0.8,
+      "classification": "P1-dominant; mid evenness; predominantly regular stacking",
+      "distance_counts": {
+        "0": 3,
+        "7": 3
+      },
+      "adj_counts": {
+        "0": 2,
+        "7": 1
+      },
+      "dominant_pairwise_interval": "P1",
+      "dominant_adjacent_interval": "P1",
+      "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics.",
+      "deduped_note_count": 2,
+      "deduped_metrics": {
+        "cardinality": 2,
+        "vertical_note_count": 2,
+        "vertical_unique_pitch_count": 2,
+        "pair_score": 1.0,
+        "chain_score": 1.0,
+        "weighted_linear_score": 1.0,
+        "weighted_quadratic_score": 1.0,
+        "hybrid_score": 1.0,
+        "H": 1.0,
+        "H_label": "homogeneous",
+        "evenness_score": 0.0,
+        "type_score": 1.0,
+        "classification": "P5-dominant; low evenness; uniform stacking",
+        "distance_counts": {
+          "7": 1
+        },
+        "adj_counts": {
+          "7": 1
+        },
+        "dominant_pairwise_interval": "P5",
+        "dominant_adjacent_interval": "P5",
+        "interpretation_note": "Single-interval or maximally concentrated dyad/degenerate case (not consonance validation)."
+      }
+    },
+    {
+      "fixture": "passage_changing_interval_field",
+      "description": "Three verticalities: chromatic cluster, whole-tone segment, diminished seventh.",
+      "tags": [
+        "passage",
+        "multi_slice"
+      ],
+      "analysis": {
+        "dominance_threshold": 0.35,
+        "even_high": 0.8,
+        "even_low": 0.3,
+        "hybrid_alpha": 0.6,
+        "homogeneity_method": "dominance",
+        "bin_cents": 100,
+        "chain_threshold": 0.6
+      },
+      "slices": [
+        {
+          "cardinality": 4,
+          "vertical_note_count": 4,
+          "vertical_unique_pitch_count": 4,
+          "pair_score": 0.5,
+          "chain_score": 1.0,
+          "weighted_linear_score": 0.692308,
+          "weighted_quadratic_score": 0.830769,
+          "hybrid_score": 0.8,
+          "H": 0.5,
+          "H_label": "moderately homogeneous",
+          "evenness_score": 0.729574,
+          "type_score": 0.6,
+          "classification": "m2-dominant; mid evenness; uniform stacking",
+          "distance_counts": {
+            "1": 3,
+            "2": 2,
+            "3": 1
+          },
+          "adj_counts": {
+            "1": 3
+          },
+          "dominant_pairwise_interval": "m2",
+          "dominant_adjacent_interval": "m2",
+          "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics.",
+          "slice_id": 1,
+          "label": "chromatic_cluster",
+          "notes": [
+            [
+              "C",
+              0.0,
+              4
+            ],
+            [
+              "C",
+              1.0,
+              4
+            ],
+            [
+              "D",
+              0.0,
+              4
+            ],
+            [
+              "D",
+              1.0,
+              4
+            ]
+          ]
+        },
+        {
+          "cardinality": 4,
+          "vertical_note_count": 4,
+          "vertical_unique_pitch_count": 4,
+          "pair_score": 0.5,
+          "chain_score": 1.0,
+          "weighted_linear_score": 0.692308,
+          "weighted_quadratic_score": 0.830769,
+          "hybrid_score": 0.8,
+          "H": 0.5,
+          "H_label": "moderately homogeneous",
+          "evenness_score": 0.519759,
+          "type_score": 0.6,
+          "classification": "M2-dominant; mid evenness; uniform stacking",
+          "distance_counts": {
+            "2": 3,
+            "4": 2,
+            "6": 1
+          },
+          "adj_counts": {
+            "2": 3
+          },
+          "dominant_pairwise_interval": "M2",
+          "dominant_adjacent_interval": "M2",
+          "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics.",
+          "slice_id": 2,
+          "label": "whole_tone_segment",
+          "notes": [
+            [
+              "C",
+              0.0,
+              4
+            ],
+            [
+              "D",
+              0.0,
+              4
+            ],
+            [
+              "E",
+              0.0,
+              4
+            ],
+            [
+              "F",
+              1.0,
+              4
+            ]
+          ]
+        },
+        {
+          "cardinality": 4,
+          "vertical_note_count": 4,
+          "vertical_unique_pitch_count": 4,
+          "pair_score": 0.5,
+          "chain_score": 1.0,
+          "weighted_linear_score": 0.692308,
+          "weighted_quadratic_score": 0.830769,
+          "hybrid_score": 0.8,
+          "H": 0.5,
+          "H_label": "moderately homogeneous",
+          "evenness_score": 0.439247,
+          "type_score": 0.6,
+          "classification": "m3-dominant; mid evenness; uniform stacking",
+          "distance_counts": {
+            "3": 3,
+            "6": 2,
+            "9": 1
+          },
+          "adj_counts": {
+            "3": 3
+          },
+          "dominant_pairwise_interval": "m3",
+          "dominant_adjacent_interval": "m3",
+          "interpretation_note": "Adjacent regularity exceeds pairwise concentration under current semantics.",
+          "slice_id": 3,
+          "label": "diminished_seventh",
+          "notes": [
+            [
+              "C",
+              0.0,
+              4
+            ],
+            [
+              "E",
+              -1.0,
+              4
+            ],
+            [
+              "G",
+              -1.0,
+              4
+            ],
+            [
+              "A",
+              0.0,
+              4
+            ]
+          ]
+        }
+      ],
+      "passage_delta_rows": [
+        {
+          "Slice": 1,
+          "Label": "chromatic_cluster",
+          "H (interval dominance)": 0.5,
+          "ΔH (prev slice)": null
+        },
+        {
+          "Slice": 2,
+          "Label": "whole_tone_segment",
+          "H (interval dominance)": 0.5,
+          "ΔH (prev slice)": 0.0
+        },
+        {
+          "Slice": 3,
+          "Label": "diminished_seventh",
+          "H (interval dominance)": 0.5,
+          "ΔH (prev slice)": 0.0
+        }
+      ],
+      "interval_profile_changes": true
+    }
+  ]
+}

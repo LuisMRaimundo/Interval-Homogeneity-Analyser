@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "fixture_id": "diminished_seventh_symmetric",
+  "description": "Diminished seventh C4–A4: symmetric minor-third tiling.",
+  "tags": [
+    "seventh",
+    "symmetric"
+  ],
+  "analysis": {
+    "homogeneity_method": "dominance",
+    "bin_cents": 100,
+    "hybrid_alpha": 0.6,
+    "dominance_threshold": 0.35,
+    "even_high": 0.8,
+    "even_low": 0.3,
+    "chain_threshold": 0.6,
+    "intervallic_headline_mode": "pairwise_intervallic_concentration"
+  },
+  "qualitative": {
+    "stronger_than": "dominant_seventh_irregular"
+  },
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      -1.0,
+      4
+    ],
+    [
+      "G",
+      -1.0,
+      4
+    ],
+    [
+      "A",
+      0.0,
+      4
+    ]
+  ]
+}

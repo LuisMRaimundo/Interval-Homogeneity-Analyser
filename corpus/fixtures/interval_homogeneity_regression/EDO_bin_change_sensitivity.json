@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "fixture_id": "EDO_bin_change_sensitivity",
+  "description": "Same four semitones analysed at bin_cents=100 vs 50 (modelling choice).",
+  "tags": [
+    "edo",
+    "binning"
+  ],
+  "analysis": {
+    "homogeneity_method": "dominance",
+    "bin_cents": 100,
+    "hybrid_alpha": 0.6,
+    "dominance_threshold": 0.35,
+    "even_high": 0.8,
+    "even_low": 0.3,
+    "chain_threshold": 0.6,
+    "intervallic_headline_mode": "pairwise_intervallic_concentration"
+  },
+  "qualitative": {
+    "binning_is_modelling_choice": true
+  },
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "C",
+      1.0,
+      4
+    ],
+    [
+      "D",
+      0.0,
+      4
+    ],
+    [
+      "D",
+      1.0,
+      4
+    ]
+  ],
+  "bin_variants": [
+    100,
+    50
+  ]
+}
