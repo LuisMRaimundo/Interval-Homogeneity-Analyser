@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "fixture_id": "transposed_same_structure",
+  "description": "chromatic_cluster_four transposed up major second (D4–F#4).",
+  "tags": [
+    "metamorphic",
+    "transposition"
+  ],
+  "analysis": {
+    "homogeneity_method": "dominance",
+    "bin_cents": 100,
+    "hybrid_alpha": 0.6,
+    "dominance_threshold": 0.35,
+    "even_high": 0.8,
+    "even_low": 0.3,
+    "chain_threshold": 0.6,
+    "intervallic_headline_mode": "pairwise_intervallic_concentration"
+  },
+  "qualitative": {
+    "transposition_invariant": true
+  },
+  "notes": [
+    [
+      "D",
+      0.0,
+      4
+    ],
+    [
+      "D",
+      1.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      1.0,
+      4
+    ]
+  ],
+  "reference_fixture": "chromatic_cluster_four"
+}

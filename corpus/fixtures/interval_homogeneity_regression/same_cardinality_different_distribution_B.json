@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "fixture_id": "same_cardinality_different_distribution_B",
+  "description": "Four-note wide/symmetric C4–C5: same cardinality, different interval distribution.",
+  "tags": [
+    "cardinality_control",
+    "wide"
+  ],
+  "analysis": {
+    "homogeneity_method": "dominance",
+    "bin_cents": 100,
+    "hybrid_alpha": 0.6,
+    "dominance_threshold": 0.35,
+    "even_high": 0.8,
+    "even_low": 0.3,
+    "chain_threshold": 0.6,
+    "intervallic_headline_mode": "pairwise_intervallic_concentration"
+  },
+  "qualitative": {
+    "cardinality": 4,
+    "differs_from": "same_cardinality_different_distribution_A"
+  },
+  "notes": [
+    [
+      "C",
+      0.0,
+      4
+    ],
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "G",
+      1.0,
+      4
+    ],
+    [
+      "C",
+      0.0,
+      5
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "fixture_id": "inversion_same_interval_multiset",
+  "description": "Inversion of major_triad_close around E4: E4 G#4 C#4.",
+  "tags": [
+    "metamorphic",
+    "inversion"
+  ],
+  "analysis": {
+    "homogeneity_method": "dominance",
+    "bin_cents": 100,
+    "hybrid_alpha": 0.6,
+    "dominance_threshold": 0.35,
+    "even_high": 0.8,
+    "even_low": 0.3,
+    "chain_threshold": 0.6,
+    "intervallic_headline_mode": "pairwise_intervallic_concentration"
+  },
+  "qualitative": {
+    "interval_multiset_preserved": true
+  },
+  "notes": [
+    [
+      "E",
+      0.0,
+      4
+    ],
+    [
+      "G",
+      1.0,
+      4
+    ],
+    [
+      "C",
+      1.0,
+      4
+    ]
+  ],
+  "reference_fixture": "major_triad_close"
+}
