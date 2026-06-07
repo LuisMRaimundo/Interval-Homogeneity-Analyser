@@ -24,6 +24,7 @@ from iav.interval_analysis_core import (
     parse_note_name,
 )
 from iav.musicxml_io import parse_musicxml_upload
+from iav.note_types import NoteTuple
 from iav.pitch_model import NOTE_BASE
 from iav.charts import chart_homogeneity_over_time, chart_vertical_cardinality_over_time
 from iav.symbolic_profile import passage_delta_rows, slice_intervallic_columns
@@ -35,6 +36,7 @@ from iav.vertical_cardinality import (
 from iav.widgets import WidgetState
 
 NoteList = List[Any]
+SliceList = List[Dict[str, Any]]
 
 
 def _slice_summary_dataframe(summary_rows: List[Dict[str, Any]]) -> pd.DataFrame:
@@ -156,7 +158,7 @@ def ingest_musicxml(w: WidgetState, notes: NoteList) -> Tuple[NoteList, int]:
 
     try:
         if w.xml_mode == MusicXmlImportMode.AGGREGATE:
-            xml_notes, skipped_microtonal = parse_musicxml_upload(
+            parsed_notes, skipped_microtonal = parse_musicxml_upload(
                 uploaded.getvalue(),
                 w.xml_mode,
                 include_grace=w.include_grace_notes,
@@ -164,6 +166,8 @@ def ingest_musicxml(w: WidgetState, notes: NoteList) -> Tuple[NoteList, int]:
                 apply_sounding_transpose=w.apply_sounding_transpose,
             )
             skipped_microtonal_total += skipped_microtonal
+            # AGGREGATE mode always returns List[NoteTuple], not verticality slices.
+            xml_notes: List[NoteTuple] = cast(List[NoteTuple], list(parsed_notes))
             if not xml_notes:
                 st.warning("No pitched notes found in the MusicXML file.")
             else:
@@ -180,15 +184,16 @@ def ingest_musicxml(w: WidgetState, notes: NoteList) -> Tuple[NoteList, int]:
                 )
             notes.extend(xml_notes)
         else:
-            slices, skipped_microtonal = parse_musicxml_upload(
+            parsed_slices, skipped_microtonal = parse_musicxml_upload(
                 uploaded.getvalue(),
                 w.xml_mode,
                 include_grace=w.include_grace_notes,
                 include_cue=w.include_cue_notes,
                 apply_sounding_transpose=w.apply_sounding_transpose,
             )
-
             skipped_microtonal_total += skipped_microtonal
+            # Verticality modes always return SliceList, not flat note tuples.
+            slices: SliceList = cast(SliceList, list(parsed_slices))
             if not slices:
                 st.warning("No pitched notes found in the MusicXML file.")
             else:
