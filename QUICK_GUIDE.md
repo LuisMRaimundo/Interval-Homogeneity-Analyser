@@ -1,6 +1,6 @@
 # Interface quick guide
 
-Short guide for **non-specialists**: what each option does and **when to use it**. The tool measures **pitch distances** (symbolic intervals on the grid you choose), not “how the orchestra sounds”.
+Short guide for **non-specialists**: what each option does and **when to use it**. The tool measures **pitch distances** (symbolic intervals on the grid you choose), not “how the orchestra sounds”. For metric meaning, limits, and musicological use, see **[docs/METRIC_SEMANTICS.md](docs/METRIC_SEMANTICS.md)**.
 
 **Fixed workflow (thesis / many examples):** [ANALYSIS_PRESET.md](ANALYSIS_PRESET.md) — presets ①–④, pairwise headline **H** by default, exact UI labels.
 

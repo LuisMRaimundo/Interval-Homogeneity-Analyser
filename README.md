@@ -4,6 +4,8 @@
 
 Streamlit app for **intervallic homogeneity** in notated pitch aggregates (non-octave-equivalent intervals), from manual note entry or MusicXML — including **H-over-time** passage profiles and **vertical symbolic cardinality** (note-count thickness per slice) for verticality slices.
 
+**Semantic scope:** symbolic / score-based interval descriptors — not audio, spectral, or psychoacoustic consonance analysis. See [docs/METRIC_SEMANTICS.md](docs/METRIC_SEMANTICS.md).
+
 ## Setup
 
 From this directory, install the package in editable mode so the **`iav`** package and root **shims** (`pitch_model`, `analysis_core`, `interval_analysis`) resolve:
@@ -71,6 +73,7 @@ Annotated pilot (human labels): `python scripts/run_annotated_study.py` → `doc
 
 ## Documentation
 
+- **Metric meaning and interpretive limits (H, pair_score, adjacent, EDO, MusicXML):** [docs/METRIC_SEMANTICS.md](docs/METRIC_SEMANTICS.md)
 - **Contributing / CI:** [CONTRIBUTING.md](CONTRIBUTING.md)
 - **Validation protocol (human labels):** [docs/VALIDATION_PROTOCOL.md](docs/VALIDATION_PROTOCOL.md)
 - **Fixed analysis preset (exact UI labels):** [ANALYSIS_PRESET.md](ANALYSIS_PRESET.md)

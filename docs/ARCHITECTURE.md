@@ -36,6 +36,8 @@ Legacy imports used in notebooks, tests, and older scripts are preserved:
 
 ## Scientific scope (where logic lives)
 
+**Metric semantics (interpretive):** [METRIC_SEMANTICS.md](METRIC_SEMANTICS.md) — what **H**, **pair_score**, **chain_score**, dominance, entropy, EDO, and MusicXML modes measure and do *not* measure.
+
 - **Pitch distance vs spelling:** interval sizes and homogeneity use quantized height from `chromatic_midi_float` / `note_to_units`. Pairwise **labels** are grid summaries, not voice-leading–aware spellings.
 - **Octave:** default pairwise analysis is **not** octave-equivalent unless you interpret §6 pitch-class tools in the technical manual.
 - **Homogeneity (H, bands, “combined”):** implemented under **`iav.interval_analysis_core`**. Four intervallic concentrations (pairwise, adjacent, proximity-weighted linear/quadratic) are always computed; headline **H** selects one via **`IntervallicHeadlineMode`** (default pairwise). Hybrid: `H = α·adjacent + (1−α)·pairwise`. See **`TECHNICAL_MANUAL.md`** §4.5.

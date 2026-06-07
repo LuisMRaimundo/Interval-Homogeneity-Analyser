@@ -40,7 +40,7 @@ Supported workflow for **active sections** (many attacks over time):
 
 **Not supported as a single timeline:** **Aggregate (all notes)** — pools the entire file into one verticality (warning when note count > 50). Use a trimmed XML excerpt only if you truly want one global pitch multiset. Aggregate/manual analysis still exports a **single-slice** cardinality JSON at time 0.
 
-Implementation: `iav/musicxml.py` (orchestration), `iav/charts.py` (`chart_homogeneity_over_time`, `chart_vertical_cardinality_over_time`), `iav/vertical_cardinality.py`, `iav/symbolic_profile.py` (`passage_delta_rows`). See **TECHNICAL_MANUAL.md** §7.6–7.8.
+Implementation: `iav/musicxml.py` (orchestration), `iav/charts.py` (`chart_homogeneity_over_time`, `chart_vertical_cardinality_over_time`), `iav/vertical_cardinality.py`, `iav/symbolic_profile.py` (`passage_delta_rows`). See **TECHNICAL_MANUAL.md** §7.6–7.8. **How slice-level H relates to symbolic interval models (not audio):** [METRIC_SEMANTICS.md](METRIC_SEMANTICS.md) §10–§12.
 
 ## Requires caution
 

@@ -9,6 +9,8 @@ The Interval Homogeneity Analyser computes **symbolic intervallic homogeneity** 
 
 Inputs are **spellings and score times** (manual table or MusicXML). Outputs are interval histograms, concentration scores, optional passage timelines (intervallic **H** and vertical **note-count** profiles), and **`vertical_cardinality_profile.json`** — not listener responses.
 
+**Metric semantics and interpretive limits:** [METRIC_SEMANTICS.md](METRIC_SEMANTICS.md).
+
 ## What this tool does **not** measure
 
 Human labels and automated metrics in validation studies must **not** be interpreted as:

@@ -3,6 +3,8 @@
 **Version:** 2026-05-21 (rev. 2) — aligned with `iav.pitch_model`, `iav.musicxml_io`, `iav.interval_analysis_core` (intervallic headline modes), `iav.set_class_12tet`, **`iav/symbolic_profile`**, **`iav/vertical_cardinality`** (§7.8; no PC inference from unique-pitch count), **`iav/charts.py`** (passage timelines: **H** + vertical note count), **`iav/musicxml.py`** (slice summary + JSON), batch/canonical tooling, **`installers/`**, Streamlit (`iav.widgets*`, `pages/1_Which_metric_to_use.py`, `app.py`), root **shims**, and `tests/` (see `docs/ARCHITECTURE.md`, §10).  
 **Scope:** This document specifies **intervallic homogeneity** on a declared EDO grid: how concentrated or diverse the **unordered pairwise interval multiset** is for a notated sonority (§4–§5). Analysis is **symbolic and score-based** (§1.3)—not audition, not psychoacoustics. **Registral dispersion** (register layout, density, banding) is **out of scope**; use a separate tool for that. Optional §12 adds mod-12 interval-class evenness and reference **interval** fingerprints only.
 
+**Interpretive guide:** For musicological reading, what **H**, **pair_score**, **chain_score** (adjacent), proximity-weighted scores, dominance, entropy, and headline modes **mean and do not mean**, see **[docs/METRIC_SEMANTICS.md](docs/METRIC_SEMANTICS.md)** (formulas here remain authoritative for implementation).
+
 **Math formatting:** Delimiters use **MathJax / KaTeX conventions** — inline `$…$`, display `$$…$$` — so the same source renders on **Stack Exchange**, many Markdown previews, and Jupyter. (Avoid legacy LaTeX `\$` / `\\[` delimiters when pasting; use `$` / `$$`.)
 
 ---
