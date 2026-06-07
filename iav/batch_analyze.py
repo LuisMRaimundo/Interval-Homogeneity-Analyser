@@ -9,7 +9,7 @@ import sys
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Sequence
+from typing import Any, Dict, List, Optional, Sequence, cast
 
 from iav.analysis_enums import IntervallicHeadlineMode, MusicXmlImportMode
 from iav.canonical_corpus import analyze_sonority, load_canonical_corpus, notes_from_json_rows
@@ -61,14 +61,16 @@ def _load_notes_from_path(path: Path, cfg: BatchConfig) -> List[NoteTuple]:
                 if not names:
                     raise ValueError(f"No XML inside MXL: {path}")
                 data = zf.read(names[0])
-        notes, _skipped = parse_musicxml_upload(
+        parsed_notes, _skipped = parse_musicxml_upload(
             data,
             MusicXmlImportMode.AGGREGATE,
             include_grace=False,
             include_cue=False,
             apply_sounding_transpose=cfg.apply_sounding_transpose,
         )
-        return list(notes)
+        # AGGREGATE mode always returns List[NoteTuple], not verticality slices.
+        xml_notes: List[NoteTuple] = cast(List[NoteTuple], list(parsed_notes))
+        return xml_notes
     raise ValueError(f"Unsupported input: {path}")
 
 
