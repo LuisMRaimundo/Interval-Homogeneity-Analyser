@@ -86,7 +86,7 @@ Annotated pilot (human labels): `python scripts/run_annotated_study.py` → `doc
 
 Install **runtime dependencies** (see `pyproject.toml` `[project] dependencies`) plus **pytest** — e.g. `pip install -e ".[dev]"` for everything including **ruff** and **mypy**, or `pip install pytest` plus the runtime list if you only want tests.
 
-Run **`pytest`** from this directory (the repository root). **`pythonpath = ["."]`** is set in `pyproject.toml` so collection resolves **`iav`** and the root **shims** (`pitch_model`, `analysis_core`, `interval_analysis`) **without** requiring `pip install -e .` first — useful for an unpacked ZIP. An **editable install** is still recommended for day-to-day work so tools and imports match an installed layout.
+Run **`pytest`** from this directory (the repository root). **`pythonpath = ["."]`** is set in `pyproject.toml` so collection resolves **`iav`** and the root **shims** (`pitch_model`, `analysis_core`, `interval_analysis`) **without** requiring `pip install -e .` first — useful for an unpacked ZIP. An **editable install** is still recommended for day-to-day work so tools and imports match an installed layout. Typical full suite: **574** tests (`pytest tests -q`).
 
 Implementations live under **`iav/`**; legacy tests may still `import pitch_model` / `analysis_core` / `interval_analysis` — those modules are thin **shims** (`tests/test_backward_compat_shims.py` locks shim ↔ package identity). The chart smoke module (`tests/test_charts_smoke.py`) imports **`altair`** and **`pandas`**: if those are not installed, those tests are **skipped** automatically.
 
@@ -117,6 +117,7 @@ mypy
 
 ## Notes
 
+- **Downstream package use:** [Orchomogeneity_Analyser](https://github.com/LuisMRaimundo/Orchomogeneity_Analyser) imports **`iav.vertical_cardinality`** for symbolic vertical note-count metrics in score analysis. Install this repository (editable or `pip install git+https://github.com/LuisMRaimundo/Interval-Homogeneity-Analyser.git`) where that dependency is required.
 - Manual input uses a single **Note** column: `C4`, `D#3`, `Eb`, `F##` (octave defaults to 4 if omitted).
 - MusicXML upload accepts `.xml`, `.musicxml`, or `.mxl` (compressed).
 - MusicXML import supports **aggregate** (single sonority), **onset verticalities**, or **sounding verticalities**. Passage analysis: verticality modes + slice summary table + **homogeneity timeline chart** + **vertical cardinality chart** + JSON export (§7.6–7.8 of the manual). Manual/aggregate mode also exports **`vertical_cardinality_profile.json`** (single time point). Aggregate on long scores triggers a warning when note count > 50.
