@@ -303,7 +303,7 @@ For each aggregate, **`homogeneity_score`** always computes **four** concentrati
 | **`weighted_linear_score`** | All pairs weighted by $1/\|j-i\|$ |
 | **`weighted_quadratic_score`** | All pairs weighted by $1/\|j-i\|^2$ |
 
-**Headline $H$** follows **`IntervallicHeadlineMode`** (UI: *Headline intervallic metric*). Default: **`pairwise_intervallic_concentration`** ($H = S_{\mathrm{pair}}$). Other modes: adjacent ($H = S_{\mathrm{chain}}$); proximity-weighted linear or quadratic; **hybrid** $H = \alpha S_{\mathrm{chain}} + (1-\alpha) S_{\mathrm{pair}}$ with **`alpha_used`** (§8.3). API flag **`blend_chain_in_h=True`** maps to hybrid.
+**Headline $H$** follows **`IntervallicHeadlineMode`** (UI: *Headline intervallic metric*). Default: **`pairwise_intervallic_concentration`** ($H = S_{\mathrm{pair}}$). Other modes: adjacent ($H = S_{\mathrm{chain}}$); proximity-weighted linear or quadratic; **hybrid** $H = \alpha S_{\mathrm{chain}} + (1-\alpha) S_{\mathrm{pair}}$ with the blend weight stored as **`hybrid_alpha_used`** (§8.3). API flag **`blend_chain_in_h=True`** maps to hybrid.
 
 All four scores appear in the UI expander *Intervallic metric suite*; only the selected mode sets **`H`**, **`H_label`**, and slice **ΔH**. **Rationale:** chromatic clusters can have maximal adjacent regularity (repeated semitone steps) while the full pairwise cloud stays diverse—both views are analytically meaningful (§11.6).
 
@@ -373,7 +373,7 @@ $$
 | **`chain_score`**, **`pair_score`** | $S_{\mathrm{chain}}$, $S_{\mathrm{pair}}$ for the active method (dominance or entropy). |
 | **`weighted_linear_score`**, **`weighted_quadratic_score`** | Proximity-weighted concentrations ($p=1$, $p=2$); always computed; headline only if that mode is selected. |
 | **`intervallic_headline_mode`** | **`IntervallicHeadlineMode`** enum value used for **$H$** (§4.5). |
-| **`alpha_used`** | Blend weight when mode is **hybrid** (§8.3); logged otherwise but does not change **$H$** unless hybrid. |
+| **`hybrid_alpha_used`** | Blend weight when mode is **hybrid** (§8.3); logged otherwise but does not change **$H$** unless hybrid. (Passed in as the `alpha_used` argument of `metrics_for_notes`; the stored dataclass field is `hybrid_alpha_used`.) |
 | **`H_dom`**, **`chain_dom`**, **`pair_dom`** | Dominance-path subscores (combined mode only; else mirrored or `None` per method). |
 | **`H_ent`**, **`chain_ent`**, **`pair_ent`** | Entropy-concentration path (combined or entropy mode). |
 | **`H_consensus`** | Geometric mean (combined mode only). |
@@ -575,7 +575,7 @@ When import mode is **onset** or **sounding verticalities** and slice mode is **
 
 **UI outputs (in order):**
 
-- **Altair line chart (intervallic homogeneity)** — **`chart_homogeneity_over_time`** (`iav/charts.py`): headline **$H$** (Y, 0–1) vs **`Time (quarters)`** (X, quarter-note units from MusicXML `<motion>` / divisions). Requires **at least two** slices; points are labelled in the tooltip with slice index, time label, note count, and **`H label`**.
+- **Altair line chart (intervallic homogeneity)** — **`chart_homogeneity_over_time`** (`iav/charts.py`): headline **$H$** (Y, 0–1) vs **`Time (quarters)`** (X, quarter-note units derived from MusicXML `<divisions>`). Requires **at least two** slices; points are labelled in the tooltip with slice index, time label, note count, and **`H label`**.
 - **Altair line chart (vertical cardinality)** — **`chart_vertical_cardinality_over_time`** (`iav/charts.py`): **one** plotted series — **`vertical_note_count`** (Y) vs **`Time (quarters)`** (X). Shown whenever the passage summary is built; works from **one or more** slices with valid **`Notes`**. Tooltips may show **`Unique pitches`** and **`PC cardinality`** when those CSV columns exist; they are **not** separate plotted lines (§7.8). Title **Vertical Note Count over Time** (or **Vertical Cardinality Profile over Time** when any row has **`Unique pitches`**). This is **not** acoustic density, loudness, or spectral mass.
 - **Summary table** — all columns below.
 - **`slice_summary.csv`** download.
@@ -706,7 +706,7 @@ $$
 
 Otherwise $\alpha_{\mathrm{used}} = \alpha_{\mathrm{base}}$.
 
-For non-hybrid modes, **`alpha_used`** is still stored on **`AggregateHomogeneityMetrics`** for CSV reproducibility but **does not change** headline **$H$**.
+For non-hybrid modes, the blend weight is still stored on **`AggregateHomogeneityMetrics`** (field **`hybrid_alpha_used`**) for CSV reproducibility but **does not change** headline **$H$**.
 
 ### 8.4 Forced deduplication on large uploads
 
@@ -1111,3 +1111,4 @@ No claim is made that this list is exhaustive; it anchors **symbolic** neighbour
 - **2026-05-22:** Documentation and defaults aligned: preset ①–④ (**`iav/analysis_presets.py`**, **`ANALYSIS_PRESET.md`**); headline **H** default **pairwise** (not hybrid α=0.55); **`parse_musicxml_upload`** + UI **Apply MusicXML transposition (concert pitch)** + CLI **`--sounding-transpose`**; regression tests **`test_preset_default_metrics`**, **`test_musicxml_dispatch`**; removed obsolete nested-repo sync script.
 - **2026-05-21 (vertical cardinality profile):** §7.8 vertical symbolic cardinality; second passage chart **`chart_vertical_cardinality_over_time`**; **`vertical_cardinality_profile.json`**; module **`iav/vertical_cardinality.py`**; tests **`tests/test_vertical_cardinality.py`**. Intervallic **$H$** definitions unchanged.
 - **2026-05-21 (rev. 2 — PC cardinality export):** **`vertical_cardinality_from_summary_row`** no longer infers pitch-class cardinality from unique-pitch count; §7.8 documents chart (single Y-series), JSON population rules, and code-path table; tests **`test_pc_cardinality_not_inferred_when_column_missing`**, **`test_c4_c5_octave_duplicate_pitch_class_from_notes_not_inferred_in_json_row`**.
+- **2026-06-17 (documentation-only sync):** Corrected the persisted/exported field name to **`hybrid_alpha_used`** (§4.5, §4.9, §8.3) to match `AggregateHomogeneityMetrics` and `tests/test_export_schema_stability.py`; replaced a non-existent MusicXML `<motion>` reference with `<divisions>` for the homogeneity-timeline X axis (§7.6). **No executable code was modified.**
