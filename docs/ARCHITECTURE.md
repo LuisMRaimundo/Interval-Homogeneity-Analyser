@@ -1,4 +1,4 @@
-# Architecture — Interval_Homogeneity
+# Architecture — Intervallic_Homogeneity
 
 ## Package layout (canonical)
 

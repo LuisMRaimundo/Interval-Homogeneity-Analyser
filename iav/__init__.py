@@ -1,4 +1,4 @@
-"""Interval_Homogeneity — primary Python package (analytics + Streamlit helpers)."""
+"""Intervallic_Homogeneity — primary Python package (analytics + Streamlit helpers)."""
 
 from .analysis_enums import HomogeneityMethod
 from .constants import FORCE_DEDUPE_THRESHOLD, MAX_NOTES

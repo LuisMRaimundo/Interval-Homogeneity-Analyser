@@ -6,7 +6,7 @@ cd "$(dirname "$0")/../.."
 ROOT="$(pwd)"
 
 echo ""
-echo "  Interval_Homogeneity"
+echo "  Intervallic_Homogeneity"
 echo "  ==========================="
 echo ""
 

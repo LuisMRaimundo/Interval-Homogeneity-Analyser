@@ -1,6 +1,6 @@
-# Interval_Homogeneity regression fixtures (phase 1)
+# Intervallic_Homogeneity regression fixtures (phase 1)
 
-Controlled symbolic fixtures and qualitative/metamorphic tests for **Interval_Homogeneity** (`iav`). Phase 1 validates **musicological semantics of interval distribution concentration** — not aesthetic judgment, not acoustic consonance, and not perceptual dissonance.
+Controlled symbolic fixtures and qualitative/metamorphic tests for **Intervallic_Homogeneity** (`iav`). Phase 1 validates **musicological semantics of interval distribution concentration** — not aesthetic judgment, not acoustic consonance, and not perceptual dissonance.
 
 ## Purpose
 

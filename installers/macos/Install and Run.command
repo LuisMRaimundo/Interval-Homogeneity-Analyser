@@ -7,7 +7,7 @@ ROOT="$(pwd)"
 export ROOT
 
 echo ""
-echo "  Interval_Homogeneity"
+echo "  Intervallic_Homogeneity"
 echo "  ==========================="
 echo ""
 

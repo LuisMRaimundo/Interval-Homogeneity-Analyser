@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title Interval_Homogeneity
+title Intervallic_Homogeneity
 
 cd /d "%~dp0..\.."
 set "ROOT=%CD%"
@@ -8,7 +8,7 @@ set "PY=%ROOT%\installers\runtime\windows\python\python.exe"
 set "BOOT=%ROOT%\installers\common\bootstrap.py"
 
 echo.
-echo  Interval_Homogeneity
+echo  Intervallic_Homogeneity
 echo  ===========================
 echo.
 

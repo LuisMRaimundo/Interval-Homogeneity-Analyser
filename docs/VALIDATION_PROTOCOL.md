@@ -1,8 +1,8 @@
-# Validation protocol — Interval_Homogeneity
+# Validation protocol — Intervallic_Homogeneity
 
 ## What this tool measures
 
-The Interval_Homogeneity computes **symbolic intervallic homogeneity** on notated pitch aggregates:
+The Intervallic_Homogeneity computes **symbolic intervallic homogeneity** on notated pitch aggregates:
 
 - unordered pairwise absolute pitch distances on a declared EDO grid;
 - optional adjacent, proximity-weighted, hybrid, and combined headline modes (see `TECHNICAL_MANUAL.md` §4–§5).

@@ -36,6 +36,6 @@ st.markdown(
 
 For a **fixed comparable setup** (thesis, many examples), use **Analysis presets** on the main page and [ANALYSIS_PRESET.md](../ANALYSIS_PRESET.md) (pairwise headline **H** by default).
 
-Return to **Interval_Homogeneity** via the sidebar to run an analysis.
+Return to **Intervallic_Homogeneity** via the sidebar to run an analysis.
 """
 )
