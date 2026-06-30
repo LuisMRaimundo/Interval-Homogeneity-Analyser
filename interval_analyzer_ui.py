@@ -1,4 +1,4 @@
-"""Streamlit UI orchestration for Interval Aggregate Analyzer (entry: app.py)."""
+"""Streamlit UI orchestration for Interval_Homogeneity (entry: app.py)."""
 
 from __future__ import annotations
 

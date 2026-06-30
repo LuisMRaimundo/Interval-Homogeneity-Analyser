@@ -1,4 +1,4 @@
-# Architecture — Interval Aggregate Analyzer
+# Architecture — Interval_Homogeneity
 
 ## Package layout (canonical)
 

@@ -184,7 +184,7 @@ def _inspect_single_fixture(fixture_id: str) -> Dict[str, Any]:
 
 def _render_markdown(rows: List[Dict[str, Any]], generated_at: str) -> str:
     lines = [
-        "# Interval homogeneity regression — exploratory inspection (phase 1)",
+        "# Interval_Homogeneity regression — exploratory inspection (phase 1)",
         "",
         f"Generated: {generated_at}",
         "",

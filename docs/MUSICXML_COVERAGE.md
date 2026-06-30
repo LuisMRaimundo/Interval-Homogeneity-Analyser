@@ -1,6 +1,6 @@
 # MusicXML coverage and limitations
 
-This document states what the **Interval Aggregate Analyzer** does with real scores, based on
+This document states what the **Interval_Homogeneity** does with real scores, based on
 `validation/fixtures/`, `validation/corpus/`, and the parsers in `iav.musicxml_io`.
 
 ## Interpreted correctly (smoke-tested)

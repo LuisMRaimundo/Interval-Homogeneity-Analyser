@@ -1,4 +1,4 @@
-# Interval homogeneity regression — exploratory inspection (phase 1)
+# Interval_Homogeneity regression — exploratory inspection (phase 1)
 
 Generated: 2026-06-07T21:12:34Z
 

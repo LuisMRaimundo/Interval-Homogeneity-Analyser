@@ -152,7 +152,7 @@ def ensure_app_installed(py: Path) -> None:
         except OSError:
             pass
 
-    _log("Installing Interval Aggregate Analyzer and dependencies (first run may take a few minutes) …")
+    _log("Installing Interval_Homogeneity and dependencies (first run may take a few minutes) …")
     _run([str(py), "-m", "pip", "install", "--upgrade", "pip", "wheel", "setuptools"])
     _run([str(py), "-m", "pip", "install", "-e", str(PROJECT_ROOT)])
     RUNTIME_DIR.mkdir(parents=True, exist_ok=True)
@@ -219,7 +219,7 @@ def cmd_doctor(_: argparse.Namespace) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Interval Aggregate Analyzer bootstrap")
+    parser = argparse.ArgumentParser(description="Interval_Homogeneity bootstrap")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("setup", help="Download portable Python and install dependencies").set_defaults(
         func=cmd_setup

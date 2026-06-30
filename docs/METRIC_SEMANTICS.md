@@ -1,4 +1,4 @@
-# Metric semantics — Interval Homogeneity Analyser
+# Metric semantics — Interval_Homogeneity
 
 **Purpose:** Clarify what the main intervallic homogeneity metrics **mean**, how they are **computed** (at a conceptual level), what they **do not** measure, and how they may support **musicological** reading. This document is interpretive; algorithmic detail and UI parameters remain in [TECHNICAL_MANUAL.md](../TECHNICAL_MANUAL.md).
 
@@ -8,7 +8,7 @@
 
 ## 1. Scope and methodological status
 
-Interval Homogeneity Analyser computes **symbolic / notational descriptors** of **intervallic organisation** in:
+Interval_Homogeneity computes **symbolic / notational descriptors** of **intervallic organisation** in:
 
 - **note aggregates** (manual entry or MusicXML aggregate mode),
 - **verticalities** (onset or sounding slices from MusicXML),

@@ -7,7 +7,7 @@ ROOT="$(pwd)"
 export ROOT
 
 echo ""
-echo "  Interval Aggregate Analyzer"
+echo "  Interval_Homogeneity"
 echo "  ==========================="
 echo ""
 

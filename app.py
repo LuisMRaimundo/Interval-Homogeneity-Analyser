@@ -1,4 +1,4 @@
-"""Streamlit entry: Interval Aggregate Analyzer."""
+"""Streamlit entry: Interval_Homogeneity."""
 
 import streamlit as st
 
@@ -19,9 +19,9 @@ def ensure_streamlit_context():
 if not ensure_streamlit_context():
     raise SystemExit(0)
 
-st.set_page_config(page_title="Interval Aggregate Analyzer", layout="wide")
+st.set_page_config(page_title="Interval_Homogeneity", layout="wide")
 st.sidebar.page_link("pages/1_Which_metric_to_use.py", label="Which metric to use?")
-st.title("Interval Aggregate Analyzer")
+st.title("Interval_Homogeneity")
 st.write(
     "Enter notes manually or upload MusicXML. By default, headline **H** is "
     "**pairwise intervallic concentration** on the chosen tuning grid "
