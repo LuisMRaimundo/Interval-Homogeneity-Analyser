@@ -117,7 +117,6 @@ mypy
 
 ## Notes
 
-- **Downstream package use:** [Timbral_Instrumental_Homogeneity](https://github.com/LuisMRaimundo/Timbral_Instrumental_Homogeneity) imports **`iav.vertical_cardinality`** for symbolic vertical note-count metrics in score analysis. Install this repository (editable or `pip install git+https://github.com/LuisMRaimundo/Intervallic_Homogeneity.git`) where that dependency is required.
 - Manual input uses a single **Note** column: `C4`, `D#3`, `Eb`, `F##` (octave defaults to 4 if omitted).
 - MusicXML upload accepts `.xml`, `.musicxml`, or `.mxl` (compressed).
 - MusicXML import supports **aggregate** (single sonority), **onset verticalities**, or **sounding verticalities**. Passage analysis: verticality modes + slice summary table + **homogeneity timeline chart** + **vertical cardinality chart** + JSON export (§7.6–7.8 of the manual). Manual/aggregate mode also exports **`vertical_cardinality_profile.json`** (single time point). Aggregate on long scores triggers a warning when note count > 50.
